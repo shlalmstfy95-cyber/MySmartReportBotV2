@@ -9,8 +9,8 @@ from telegram.ext import (
 import os
 import requests
 
-BOT_TOKEN = os.getenv("BOT_TOKEN")
-OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+
+TOKEN = os.getenv("TELEGRAM_TOKEN") # Render
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
